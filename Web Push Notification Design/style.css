@@ -43,7 +43,7 @@
 }
 
 #check:checked ~ .background{
-    opacity: 0;
+    opacity: 1;
     pointer-events: auto;
 }
 
@@ -70,7 +70,7 @@
     display: none;
 }
 
-.check:checked ~.alert-box {
+#check:checked ~ .alert-box {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50% , -50%) scale(0.97);
@@ -100,9 +100,8 @@
     margin-top: 20px;
 }
 
-.alert-box label {
+.btns label {
     display: inline-flex;
-    background: grey;
     height: 55px;
     padding: 0 30px;
     font-size: 20px;
